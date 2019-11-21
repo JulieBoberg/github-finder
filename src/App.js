@@ -7,6 +7,7 @@ import Navbar from "./components/layout/Navbar";
 import Alert from "./components/layout/Alert";
 import About from "./components/pages/About";
 import axios from "axios";
+import GithubState from './context/github/GithubState';
 import "./App.css";
 
 const App =()=> {
@@ -60,6 +61,7 @@ setLoading(true);
 
 
     return (
+      <GithubState>
       <Router>
       <div className='App'>
         <Navbar title='Github Finder' icon='fab fa-github' />
@@ -81,6 +83,7 @@ setLoading(true);
         </div>
       </div>
       </Router>
+      </GithubState>
     );
             }
 
