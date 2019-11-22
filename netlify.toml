@@ -1,0 +1,7 @@
+# example netlify.toml
+[build]
+  command = "netlify deploy --prod"
+  functions = "functions"
+  publish = "./build"
+
+
